@@ -19,7 +19,7 @@ function Hero(){
                 </section>
 
                 <div className="down_card">
-                    <a href="./Hoja de vida Jesús Santos.pdf" download><button className="download">Descargar CV</button></a>
+                    <a href="./Jesus_Santos_CV.pdf" download><button className="download">Descargar CV</button></a>
                 </div>
                 <div className="redes">
                     <button className="red"><a href="https://www.linkedin.com/in/jes%C3%BAs-santos-mercado-90485b342/"><img src="https://img.icons8.com/?size=100&id=13930&format=png&color=000000" className="ubicacion1"></img></a></button>
