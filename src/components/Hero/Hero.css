@@ -1,0 +1,153 @@
+.hero-container{
+    background-color: #0f111a;
+    min-height:550px;
+    width:420px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+
+.hero_card{
+    position: relative;
+    border-radius: 15px;
+    background: #0b1220;
+    margin-top: 20px;
+    height:554px;
+    width:424px;
+    overflow: hidden;
+}
+
+.hero_card::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    /* Gradiente cónico: crea el efecto de "punta" de luz */
+    background-image: conic-gradient(
+        transparent, 
+        #3b82f6, /* El azul brillante de tu portafolio */
+        transparent 20%
+    );
+    animation: snake-border 10s linear infinite;
+}
+
+
+@keyframes snake-border {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+
+.name{
+    margin-left: 0;
+}
+
+.colombia{
+    margin-left: 0;
+}
+
+.perfil{
+    width: 120px;
+    height: 120px;
+    margin-left: 30px;
+    margin-top: 30px;
+    border-radius: 100%;
+}
+
+.ubicacion{
+    width: 25px;
+    height: 25px;
+}
+
+.hero-container div{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+
+.red{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.red a{
+    text-decoration: none;
+}
+
+.download{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 2px;
+    cursor: pointer;
+}
+
+.down_card{
+    width: 154px;
+    height: 44px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 35px;
+    margin-left: 30px;
+    border-radius: 20px;
+}
+
+.down_card::before{
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 300%;
+    height: 300%;
+        background-image: conic-gradient(
+        transparent, 
+        #ffffff, /* El azul brillante de tu portafolio */
+        transparent 20%
+    );
+    animation: snake-border 2.9s linear infinite;
+}
+
+
+
+.ubicacion1{
+    width: 30px;
+    height: 30px;
+}
+
+.text-din{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+.presentation{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 0;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+

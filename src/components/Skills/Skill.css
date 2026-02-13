@@ -1,0 +1,94 @@
+.skill-container{
+    background-color: #0f111a;
+    min-height:550px;
+    width:420px;
+    margin-top: 2px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    gap: 10px;
+    margin-left: 2px;
+}
+
+.skill_card{
+    position: relative;
+    border-radius: 15px;
+    background: #0b1220;
+    margin-top: 20px;
+    height:554px;
+    width:424px;
+    overflow: hidden;
+}
+
+.skill_card::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    /* Gradiente cónico: crea el efecto de "punta" de luz */
+    background-image: conic-gradient(
+        transparent, 
+        #3b82f6, /* El azul brillante de tu portafolio */
+        transparent 20%
+    );
+    animation: snake-border 10s linear infinite;
+}
+
+
+@keyframes snake-border {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+button{
+    cursor:auto;
+}
+
+h2{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.iconos{
+    width: 30px;
+    height: 30px;
+}  
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 170px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btns{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 0;
+}
+
+h4{
+    color: rgba(179, 175, 175, 0.904);
+}
+
+.cuatro{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 0;
+}
+
+.title{
+    margin-left: 35px;
+    margin-top: 10px;
+}

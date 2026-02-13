@@ -1,0 +1,161 @@
+.projects-container{
+    background-color: #0f111a;
+    min-height:550px;
+    width:420px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    gap: 20px;
+    margin-top: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.proyectos_card{
+    position: relative;
+    border-radius: 15px;
+    background: #0b1220;
+    margin-top: 20px;
+    height:554px;
+    width:424px;
+    overflow: hidden;
+}
+
+.proyectos_card::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    /* Gradiente cónico: crea el efecto de "punta" de luz */
+    background-image: conic-gradient(
+        transparent, 
+        #3b82f6, /* El azul brillante de tu portafolio */
+        transparent 20%
+    );
+    animation: snake-border 10s linear infinite;
+}
+
+
+@keyframes snake-border {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.boton {
+  display: inline-flex;
+  align-items: center;
+  width: 130px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.arrow {
+  margin-left: 4px;
+  transition: transform 0.3s ease;
+}
+
+.boton:hover,
+.boton:focus,
+.boton:active,
+.boton:focus-visible{
+    border: none;
+}
+
+.boton:hover .arrow {
+  transform: translateX(6px);
+}
+
+.encabezado{
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pro{
+    margin-top: 0;
+}
+
+.fotito{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    margin-left: 200px;
+    cursor: pointer;
+}
+
+.encabezado-proyecto{
+    display: inline-flex;
+    margin-top: 9px;
+}
+
+.nameproject{
+    background-color: rgba(153, 151, 151, 0.432);
+    width: 120px;
+    margin-left: 20px;
+    text-align: center;
+    height: 30px;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.proyectos{
+    background-color: rgba(66, 60, 60, 0.753);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 400px;
+    margin-left: 10px;
+    border-radius: 20px;
+    height: 100px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-size 0.4s ease;
+}
+
+.iconos-one{
+    width: 20px;
+    height: 20px;
+}  
+
+.btn-one{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.proyectos:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    background-size: 120%;
+    overlay: inherit;
+}
+
+.js{
+    width: 120px;
+}
+
+.uno{
+    background: linear-gradient(rgba(102, 32, 93, 0.884) 40%, rgba(0,0,0,0.7) 100%);
+}
+
+.tres{
+    background: linear-gradient(rgba(3, 51, 124, 0.795) 50%, rgba(0,0,0,0.7) 100%);
+}
+
+.cuatros{
+    background: linear-gradient(rgba(55, 56, 56, 0.911) 40%, rgba(0,0,0,0.7) 100%);
+}
+
+
+.dos{
+    background: linear-gradient(rgba(67, 219, 181, 0.836) 40%, rgba(0,0,0,0.7) 100%);
+}

@@ -1,0 +1,124 @@
+.experience-container{
+    background-color: #0f111a;
+    min-height:550px;
+    width:455px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+
+.experience_card{
+    position: relative;
+    border-radius: 15px;
+    background: #0b1220;
+    margin-top: 20px;
+    height:554px;
+    width:459px;
+    overflow: hidden;
+}
+
+.experience_card::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    /* Gradiente cónico: crea el efecto de "punta" de luz */
+    background-image: conic-gradient(
+        transparent, 
+        #3b82f6, /* El azul brillante de tu portafolio */
+        transparent 20%
+    );
+    animation: snake-border 10s linear infinite;
+}
+
+
+@keyframes snake-border {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.circulo{
+    width: 15px;
+    height: 15px;
+    box-shadow: 0 0 20px 5px rgba(0, 242, 254, 0.7);
+    border-radius: 100%;
+    position: absolute;
+    margin-top: 50px;
+    background-color: rgb(33, 248, 237);
+}
+
+.circulo2{
+    width: 15px;
+    height: 15px;
+    box-shadow: 0 0 20px 5px rgba(0, 242, 254, 0.7);
+    border-radius: 100%;
+    position: absolute;
+    margin-top: 280px;
+    background-color: rgb(30, 255, 0);
+}
+
+.linea-exp1{
+    width: 2px;
+    height: 450px;
+    background: linear-gradient(
+        rgb(255, 255, 255) 40%,
+        rgb(0, 0, 0,0.7) 100%
+    );
+    margin-left: 50px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-exp1{
+    margin-top: 5px;
+    margin-right: 30px;
+    text-align: start;
+    margin-left: 10px;
+    height: 200px;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 10px;
+}
+
+.text-exp2{
+    width: 330px;
+    margin-left: 10px;
+}
+
+.text-exp1 div,p,h4{
+    margin-left: 3px;
+}
+
+.empresa{
+    border: 1px solid rgb(255, 255, 255);
+    width: 150px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.671);
+}
+
+.exp-con1{
+    width: 100px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.exp-con2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    gap: 15px;
+}

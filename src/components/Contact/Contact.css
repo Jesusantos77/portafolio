@@ -1,0 +1,94 @@
+.contact-container{
+    background-color: #0f111a;
+    min-height:550px;
+    width:420px;
+    margin-top: 2px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    gap: 10px;
+    margin-left: 2px;
+    align-items: center;
+}
+
+.card_contact{
+    position: relative;
+    border-radius: 15px;
+    background: #0b1220;
+    margin-top: 20px;
+    height:554px;
+    width:424px;
+    overflow: hidden;
+}
+
+.card_contact::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    /* Gradiente cónico: crea el efecto de "punta" de luz */
+    background-image: conic-gradient(
+        transparent, 
+        #3b82f6, /* El azul brillante de tu portafolio */
+        transparent 20%
+    );
+    animation: snake-border 10s linear infinite;
+}
+
+
+@keyframes snake-border {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.contact-container form{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-container input{
+    width: 300px;
+    border: 1px solid white;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+}
+
+.contact-container input::placeholder{
+    transform: translateX(5px);
+}
+
+.inp{
+    height: 150px;
+    width: 300px;
+    border-radius: 10px;
+    overflow: auto;
+    overflow: hidden;
+}
+
+textarea::placeholder{
+    transform: translateX(5px);
+}
+
+.email{
+    width: 300px;
+    display: inline-flex;
+    justify-content: center;
+    height: 30px;
+    border: 1px solid rgba(14, 0, 145, 0.993);
+    background-color: black;
+}
+
+
+
+
