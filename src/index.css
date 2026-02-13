@@ -114,3 +114,14 @@ button:focus-visible {
 .complement{
   height: 10px;
 }
+
+@media(max-width:768px){
+  .column-one,
+  .column-tow{
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+  }
+  }
+
+
