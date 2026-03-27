@@ -8,7 +8,7 @@ import "./index.css"
 
 function app(){
   return(
-    <div className="fondo">
+    <div id="particles-js" className="fondo">
        <div className="content">
         <div className="column-one">  
           <Hero />

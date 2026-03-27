@@ -1,10 +1,11 @@
 import "./Hero.css"
 
+
 function Hero(){
     return(
         <div className="hero_card">
             <section className="hero-container">
-                <img className="perfil" src="https://media.licdn.com/dms/image/v2/D4D35AQH1p74UEY7ARg/profile-framedphoto-shrink_200_200/B4DZxXmBs_HkAY-/0/1770996112477?e=1771779600&v=beta&t=8VrHvkYjNZolYwyDr9VTq4o8zeHIgl0iv7B7W4l9atg" alt="Perfil" />
+                <img className="perfil" src="/perfil.png"/>
                 <section className="presentation">   
                     <h2 className="name">Jesús Santos Mercado</h2>
                     <p>Full Stack Developer</p>
